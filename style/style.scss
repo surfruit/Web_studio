@@ -27,8 +27,12 @@ p,
 a {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
-
+a{
+  
+}
 
 
 .header {
@@ -57,10 +61,13 @@ a {
         font-size: 26px;
         line-height: 31px;
         letter-spacing: 0.03em;
-        a{
-          color:black;
+        
+
+        a {
+          
           text-decoration: none;
         }
+
         span {
           color: #2196F3;
         }
@@ -103,7 +110,8 @@ a {
       a {
         margin-right: 50px;
         text-decoration: none;
-        color: black;
+        color: #757575;
+        ;
         line-height: 16px;
         letter-spacing: 0.02em;
       }
@@ -142,6 +150,7 @@ a {
       text-align: center;
       letter-spacing: 0.06em;
       margin-top: 200px;
+      color:white
     }
 
     button {
@@ -271,23 +280,38 @@ main {
 .footer {
   background: #2F303A;
   padding: 60px 0px 60px 215px;
+  display: flex;
+  flex-direction: column;
 
   span {
     color: #2196F3;
   }
 
-  h2 {
+
+  .logo {
     font-weight: 700;
     font-size: 26px;
     color: white;
+    text-decoration: none;
   }
 
-  h4 {
+    &__info{
     margin-top: 20px;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    a{
+           color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 171%;
+      margin-top: 9px;
+    }
+    a:hover{
+      color: #FFFFFF;
+      transition: 1s;
+    }
   }
 
   p {

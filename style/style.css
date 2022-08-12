@@ -25,6 +25,8 @@ p,
 a {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 
 .header {
@@ -54,7 +56,6 @@ a {
   letter-spacing: 0.03em;
 }
 .header .nav nav .logo a {
-  color: black;
   text-decoration: none;
 }
 .header .nav nav .logo span {
@@ -90,7 +91,7 @@ a {
 .header .nav .contact a {
   margin-right: 50px;
   text-decoration: none;
-  color: black;
+  color: #757575;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
@@ -123,6 +124,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
   margin-top: 200px;
+  color: white;
 }
 .header .slider button {
   margin-top: 30px;
@@ -229,21 +231,35 @@ main .our_team__box p {
 .footer {
   background: #2F303A;
   padding: 60px 0px 60px 215px;
+  display: flex;
+  flex-direction: column;
 }
 .footer span {
   color: #2196F3;
 }
-.footer h2 {
+.footer .logo {
   font-weight: 700;
   font-size: 26px;
   color: white;
+  text-decoration: none;
 }
-.footer h4 {
+.footer__info {
   margin-top: 20px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   color: white;
+  display: flex;
+  flex-direction: column;
+}
+.footer__info a {
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 171%;
+  margin-top: 9px;
+}
+.footer__info a:hover {
+  color: #FFFFFF;
+  transition: 1s;
 }
 .footer p {
   margin-top: 9px;
