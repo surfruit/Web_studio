@@ -265,6 +265,31 @@ main .main__nav__button:hover {
 }
 main .boxes {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+main .box {
+  border: 1px solid #EEEEEE;
+  margin: 30px 30px 30px 30px;
+}
+main .box h2 {
+  margin-left: 24px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+main .box p {
+  margin-left: 24px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .footer {
