@@ -30,15 +30,13 @@ a {
   text-decoration: none;
   color: rgb(0, 0, 0);
 }
-a{
-  
+
+ul {
+  list-style-type: none;
 }
 
-
 .header {
-  ul {
-    list-style-type: none;
-  }
+
 
   display: flex;
   flex-direction: column;
@@ -61,10 +59,10 @@ a{
         font-size: 26px;
         line-height: 31px;
         letter-spacing: 0.03em;
-        
+
 
         a {
-          
+
           text-decoration: none;
         }
 
@@ -150,7 +148,7 @@ a{
       text-align: center;
       letter-spacing: 0.06em;
       margin-top: 200px;
-      color:white
+      color: white
     }
 
     button {
@@ -178,6 +176,10 @@ a{
 }
 
 main {
+  hr{
+    border: 1px solid #ECECEC;
+    width: 100%;
+  }
   .about_us {
     display: flex;
     margin: 94px 215px 94px 215px;
@@ -275,6 +277,44 @@ main {
       }
     }
   }
+
+  .main__nav {
+    margin-top: 100px;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      li {
+        margin-right: 8px;
+      }
+    }
+
+    &__button {
+      background: #F5F4FA;
+      border-radius: 4px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 162%;
+      letter-spacing: 0.03em;
+      color: #212121;
+      padding:6px 22px 6px 22px;
+      border:none;
+      font-family: 'Roboto';
+    }
+
+    &__button:hover {
+      background: #2196F3;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      color: #FFFFFF;
+      transition: 1s;
+      cursor:pointer;
+    } 
+  }
+  .boxes{
+    margin-top: 20px;
+  }
 }
 
 .footer {
@@ -295,7 +335,7 @@ main {
     text-decoration: none;
   }
 
-    &__info{
+  &__info {
     margin-top: 20px;
     font-style: normal;
     font-weight: 400;
@@ -303,12 +343,14 @@ main {
     color: white;
     display: flex;
     flex-direction: column;
-    a{
-           color: rgba(255, 255, 255, 0.6);
+
+    a {
+      color: rgba(255, 255, 255, 0.6);
       letter-spacing: 171%;
       margin-top: 9px;
     }
-    a:hover{
+
+    a:hover {
       color: #FFFFFF;
       transition: 1s;
     }
